@@ -4,29 +4,29 @@ A modern React-based frontend for an AI-powered chat application. This applicati
 
 ## Features
 
-- 🔐 User Authentication (Login/Register)
-- 💬 Real-time Chat Interface
-- 🤖 Multiple AI Model Support (GPT-3.5, GPT-4)
-- 📝 Conversation Management
-- 🎨 Modern UI with Responsive Design
-- ⚡ Fast Development with Vite
-- 🔍 Markdown Support for AI Responses
+ User Authentication 
+ Real-time Chat Interface
+ Multiple AI Model Support 
+ Conversation Management
+ Modern UI with Responsive Design
+ Fast Development with Vite
+ Markdown Support for AI Responses
 
 ## Tech Stack
 
-- **Frontend Framework**: React 19
-- **Build Tool**: Vite 7
-- **Routing**: React Router DOM 7
-- **HTTP Client**: Axios
-- **Markdown Rendering**: React Markdown
-- **Styling**: CSS Modules
-- **Code Quality**: ESLint
+ Frontend Framework**: React 19
+ Build Tool**: Vite 7
+ Routing**: React Router DOM 7
+ HTTP Client**: Axios
+ Markdown Rendering**: React Markdown
+ Styling**: CSS Modules
+ Code Quality**: ESLint
 
 ## Prerequisites
 
-- Node.js (v16 or higher)
-- npm or yarn
-- Django Backend API (running on port 8000)
+ Node.js (v16 or higher)
+ npm or yarn
+ Django Backend API (running on port 8000)
 
 ## Installation
 
