@@ -1,0 +1,266 @@
+/* Dashboard Styles - ChatGPT Inspired */
+.dashboard {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.sidebar {
+  width: 260px;
+  background: #202123;
+  color: white;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.new-conv {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.new-conv input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  background: #40414f;
+  color: white;
+}
+
+.new-conv input:focus {
+  outline: none;
+  border-color: #10a37f;
+}
+
+.new-conv button {
+  padding: 0.5rem 1rem;
+  background: #10a37f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.new-conv button:hover {
+  background: #0d8c6e;
+}
+
+.conversations {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.conversations li {
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conversations li:hover {
+  background: #343541;
+}
+
+.conversations li.selected {
+  background: #343541;
+  border-left: 3px solid #10a37f;
+}
+
+.main-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #343541;
+  color: white;
+}
+
+.chat-header {
+  padding: 1rem;
+  border-bottom: 1px solid #565869;
+  font-size: 1.2rem;
+  background: #40414f;
+}
+
+.messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.message {
+  max-width: 80%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+  transition: all 0.2s ease;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: #10a37f;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.message.ai {
+  align-self: flex-start;
+  background: #40414f;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.message.sending {
+  opacity: 0.7;
+}
+
+.message.error {
+  border-left: 3px solid #ff6b6b;
+}
+
+.message .status {
+  font-size: 0.8em;
+  margin-top: 0.25rem;
+  opacity: 0.8;
+}
+
+.message .status.sending {
+  color: #e0e0e0;
+}
+
+.message .status.error {
+  color: #ff6b6b;
+}
+
+.input-area {
+  padding: 1rem;
+  border-top: 1px solid #565869;
+  display: flex;
+  gap: 0.5rem;
+  background: #40414f;
+}
+
+.input-area select {
+  padding: 0.5rem;
+  border: 1px solid #565869;
+  border-radius: 5px;
+  background: #40414f;
+  color: white;
+}
+
+.input-area input[type="text"] {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #565869;
+  border-radius: 5px;
+  background: #40414f;
+  color: white;
+  font-size: 1rem;
+}
+
+.input-area input[type="text"]:focus {
+  outline: none;
+  border-color: #10a37f;
+}
+
+.input-area button {
+  padding: 0.75rem 1.5rem;
+  background: #10a37f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.input-area button:hover:not(:disabled) {
+  background: #0d8c6e;
+}
+
+.input-area button:disabled {
+  background: #565869;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Markdown content styling */
+.message-content {
+  text-align: left;
+}
+
+.message-content p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.message-content code {
+  background: #2a2a2a;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+.message-content pre {
+  background: #2a2a2a;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 0.5rem 0;
+}
+
+.message-content pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.message-content strong {
+  font-weight: bold;
+}
+
+.message-content em {
+  font-style: italic;
+}
+
+.message-content ul,
+.message-content ol {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.message-content li {
+  margin: 0.25rem 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #343541;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #565869;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6e6e80;
+}
